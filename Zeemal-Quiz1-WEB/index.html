@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .todo {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            border-left: 5px solid;
+        }
+
+        .completed {
+            border-left-color: green;
+        }
+
+        .not-completed {
+            border-left-color: red;
+        }
+
+        .form-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ToDo App</h1>
+    <div class="form-container">
+        <input type="number" id="todoId" placeholder="Enter ToDo ID (1-10)" />
+        <button id="submitTodo">Submit</button>
+        <button id="showAllTodos">Show All ToDos</button>
+    </div>
+    <div id="todosContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
